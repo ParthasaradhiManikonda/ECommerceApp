@@ -16,7 +16,7 @@ class LoginForm extends Component {
     this.setState({username: event.target.value})
   }
 
-  onChangePassword = event => {
+  onChangePassword = event => 
     this.setState({password: event.target.value})
   }
 
@@ -123,6 +123,10 @@ class LoginForm extends Component {
           <button type="submit" className="login-button">
             Login
           </button>
+      <ul>
+    <li>username : rahul</li>
+    <li>password : rahul@2021</li>
+    </ul>
           {showSubmitError && <p className="error-message">*{errorMsg}</p>}
         </form>
       </div>
